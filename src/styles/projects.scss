@@ -1,0 +1,22 @@
+#project-page {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background-image: var(--section-background-color);
+    text-align: center;
+
+    .heading {
+        color: white;
+        font-size: 2.3em;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+
+    .card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: auto;
+    }
+}

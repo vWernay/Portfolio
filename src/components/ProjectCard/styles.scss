@@ -1,0 +1,15 @@
+#project-card {
+    .view {
+        box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+        color: white;
+        background-color: transparent;
+        opacity: 0.9;
+        transition: all 0.5s ease 0s;
+        height: 100%;
+    }
+    .view:hover {
+        transform: scale(1.02);
+        overflow: hidden;
+        box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+    }
+}

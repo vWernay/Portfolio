@@ -1,0 +1,175 @@
+#home-page {
+    position: relative;
+    z-index: -1;
+    background-image: var(--image-gradient), url(./../assets/images/home-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+
+    .header {
+        padding-top: 80px;
+    }
+
+    .content {
+        padding: 9rem 0 2rem;
+        color: whitesmoke;
+        text-align: left;
+    }
+
+    .heading {
+        font-size: 2.4em;
+        padding-left: 50px;
+
+        .wave {
+            animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+            animation-duration: 2.1s; /* Change to speed up or slow down */
+            animation-iteration-count: infinite; /* Never stop waving :) */
+            transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+            display: inline-block;
+        }
+            
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            10% {
+                transform: rotate(14deg);
+            } /* The following five values can be played with to make the waving more or less extreme */
+            20% {
+                transform: rotate(-8deg);
+            }
+            30% {
+                transform: rotate(14deg);
+            }
+            40% {
+                transform: rotate(-4deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+            60% {
+                transform: rotate(0deg);
+            } /* Reset for the last frame to pause */
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    
+    .heading-name {
+        font-size: 2.5em;
+        padding-left: 45px;
+    }
+    
+    .main-name {
+        color: #cd5ff8;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 2.2em;
+        color: #be6adf;
+        font-weight: 600;
+    }
+    .Typewriter__cursor {
+        font-size: 2.4em;
+        color: #b562d6;
+    }
+    
+    @media (max-width: 767px) {
+        .Typewriter__wrapper {
+            font-size: 1.4em;
+            font-weight: 500;
+            position: absolute;
+        }
+        .Typewriter__cursor {
+            display: none;
+        }
+    }
+}
+
+#home-about {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    position: relative;
+
+    .description {
+        color: white;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .myAvtar {
+        justify-content: center;
+        padding-top: 9em;
+    }
+    
+    @media (max-width: 767px) {
+        .myAvtar {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        }
+    }
+
+    .body {
+        padding-top: 50px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+    
+
+    .about-social {
+        text-align: center;
+        padding: 25px 4.5rem 5rem;
+        padding-top: 25px;
+        color: white;
+    }
+
+    .about-social-links {
+        justify-content: center;
+        padding-top: 15px;
+        display: inline-block;
+        position: relative;
+        padding-inline-start: 0;
+
+        .hsocial-icons {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 2em;
+            background: rgba(255, 255, 255, 0.972);
+            border-radius: 50%;
+            transition: 0.5s;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #68187a;
+                transition: 0.5s;
+                transform: scale(0.9);
+                z-index: -1;
+            }
+
+            &:hover::before {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px #801f95;
+            }
+
+            &:hover {
+                color: #87209e;
+                box-shadow: 0 0 5px #87209e;
+                text-shadow: 0 0 2px #87209e;
+            }
+        }
+    }
+}

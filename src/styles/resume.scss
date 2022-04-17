@@ -1,0 +1,39 @@
+#resume-page {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    background-image: var(--section-background-color);
+    color: white;
+
+    .document {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: center;
+
+        &.left {
+            padding-right: 80px
+        }
+        &.right {
+            padding-left: 80px;
+        }
+
+        @media (max-width: 767px) {
+            &.left {
+              padding-right: 15px;
+              padding-left: 15px;
+            }
+          
+            &.right {
+              padding-right: 15px;
+              padding-left: 15px;
+            }
+        }
+
+        &.title {
+            font-size: 2em;
+            font-weight: 700;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}

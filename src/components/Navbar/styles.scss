@@ -1,0 +1,45 @@
+#navbar {
+    padding: 0 3rem;
+    background-color: transparent;
+    transition: all .3s ease-out 0s;
+
+    .fork-btn {
+        margin: 16px 0px 16px 1rem;
+
+        font-size: 1.1em;
+        padding-top: 10px;
+
+        line-height: 1.4em;
+        color: #fff;
+        background-color: #934cce5e;
+        padding: 0.25rem 1.1rem;
+        text-align: center;
+
+        font-weight: 400;
+        transition: all .3s ease-out 0s;
+        z-index: 1;
+
+        &:hover {
+            transform: translateY(-2px);
+            background-color: #a24dd386;
+            border-color: #a24dd386;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    svg {
+        vertical-align: middle;
+        margin-right: 0.1rem;
+        margin-top: -4px;
+    }
+
+    .flagBtn {
+        margin-top: 18px;
+        margin-left: 2rem;
+        height: 2rem;
+        width: 3rem;
+    }
+}
