@@ -29,6 +29,13 @@ This project was developed using the following technologies:
 - [SASS](https://sass-lang.com)
 - [MUI](https://mui.com)
 
+## 🛠️ Adjustments and improvements
+
+Next updates will focus on the following tasks:
+
+- [ ] Add Multi Language support. 
+- [ ] Fully responsiveness.
+
 ## 🚀 Getting started
 
 Clone the project and access the folder.
