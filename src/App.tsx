@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <Navbar />
+        <Navbar children={{} as ReactElement} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

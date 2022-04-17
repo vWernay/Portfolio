@@ -54,7 +54,7 @@ const pages = [
     }
 ] as PagesProps;
 
-interface Props {
+type Props = {
     window?: () => Window;
     children: ReactElement;
 }
@@ -174,7 +174,7 @@ export function Navbar (props: Props) {
                                 <ForkRightIcon style={{ fontSize: "1.2em" }} />{" "}
                                 <StarIcon style={{ fontSize: "1.1em" }} />
                             </Button>
-                            <img src={BrazilFlag} className="flagBtn" />
+                            {/*<img src={BrazilFlag} className="flagBtn" />*/}
                         </Box>
                     </Toolbar>
                 </Container>
