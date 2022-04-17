@@ -3,7 +3,7 @@
   <a href="https://victorlwernay.tech" target="_blank">victorlwernay.tech</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./github/smartmockups_l23mqn4e.png" />
+  <img alt="Demo" src=".github/smartmockups_l23mqn4e.png" />
 </div>
 
 ## 🔧 Features
