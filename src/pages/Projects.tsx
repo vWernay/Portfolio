@@ -5,7 +5,28 @@ import Typography from '@mui/material/Typography';
 import { Particle } from "../components/Particles"
 import { ProjectCard } from '../components/ProjectCard';
 
-import './../styles/projects.scss'
+import './../styles/projects.scss';
+
+const projectsList = {
+    Letmeask: {
+        title: "Letmeask - Rocketseat NLW",
+        imgPath: 'https://github.com/vWernay/Letmeask/raw/master/.github/cover.svg',
+        description: "FAQ Room build with Typescript, React.js, and Firebase. Have features which allows user for realtime messaging, administration control and supports reactions on messages.",
+        repoLink: 'https://github.com/vWernay/Letmeask'
+    },
+    Feedget: {
+        title: "Feedget - Rocketseat NLW",
+        imgPath: 'https://github.com/vWernay/Feedget/raw/master/.github/preview_1.jpg',
+        description: "An interactive Feedback Widget for the user. Used: React, TypeScript, TailwindCSS, Accessibility, NodeJs, Prisma and S.O.L.I.D principles.",
+        repoLink: 'https://github.com/vWernay/Feedget'
+    },
+    RDiscoverChallenges: {
+        title: "Rocketseat Discover Challenges",
+        imgPath: 'https://github.com/vWernay/Desafios-Rocketseat/raw/master/.github/cover.jfif',
+        description: "Some front-end challenges from Rocketseat Discover, using a variety of Principles, Frameworks/Libs and Languages",
+        repoLink: 'https://github.com/vWernay/Desafios-Rocketseat'
+    }
+}
 
 export function Projects () {
     return (
@@ -18,15 +39,17 @@ export function Projects () {
                 <Typography component="p" sx={{ color: "white" }}>
                     Here are a project(s) I've worked on recently.
                 </Typography>
-                <Grid container sx={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <Grid item className="card">
+
+                <Grid container spacing={4} sx={{ justifyContent: "center", paddingTop: "2rem", paddingBottom: "1rem" }}>
+                    {Object.entries(projectsList).map(([key, value]) => (
                         <ProjectCard
-                            imgPath='https://github.com/vWernay/Letmeask/raw/master/.github/cover.svg'
-                            title="Letmeask - Rocketseat NLW"
-                            description="FAQ Room build with Typescript, React.js, and Firebase. Have features which allows user for realtime messaging, administration controll and supports reactions on messages."
-                            link="https://github.com/vWernay/Letmeask"
+                            key={key}
+                            imgPath={value.imgPath}
+                            title={value.title}
+                            description={value.description}
+                            link={value.repoLink}
                         />
-                    </Grid>
+                    ))}
                 </Grid>
             </Container>
         </Container>

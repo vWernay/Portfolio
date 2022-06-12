@@ -12,6 +12,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import './styles.scss'
 
 type PropsType = {
+    key: string;
     imgPath: string;
     title: string;
     description: string;
@@ -20,14 +21,13 @@ type PropsType = {
 
 export function ProjectCard (props: PropsType) {
     return(
-        <Grid item md={4} id="project-card">
+        <Grid item md={4} id="project-card" key={props.key}>
             <Card className="view">
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="140"
                         image={props.imgPath}
-                        alt="chatif preview"
+                        alt={`Demonstration of: ${props.title}`}
                     />
                     <CardContent>
                         <Typography gutterBottom align="center" variant="h5" component="div">
